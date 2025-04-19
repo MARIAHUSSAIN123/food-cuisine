@@ -1,0 +1,220 @@
+body{
+  background-color: #000;
+  color: #ffbe33;
+}
+
+
+
+.navbar {
+  background: #000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo { color: #ffbe33; font-size: 28px; font-weight: bold; }
+.nav-links { display: flex; gap: 25px; list-style: none; }
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links li a:hover { color: #ffbe33; }
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: black;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+
+/* === HERO === */
+/* === HERO === */
+.hero {
+  position: relative;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(237, 222, 222);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Slider Controls */
+.slider-controls {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider-controls button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* === SECTION STYLES === */
+section { padding: 60px 40px; text-align: center; }
+h2 { margin-bottom: 30px; color: #ffbe33; font-size: 32px; }
+.menu-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card h3 { margin: 10px 0 5px; }
+.card p { font-weight: bold; color: #444; }
+
+/* === ABOUT === */
+.about p { max-width: 700px; margin: auto; font-size: 18px; }
+
+/* === CONTACT FORM === */
+.contact-form { max-width: 600px; margin: auto; text-align: left; }
+.form-group { margin-bottom: 20px; }
+label { display: block; margin-bottom: 5px; font-weight: 500; }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #ffbe33;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === FOOTER === */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 190, 51, 0.4);
+}
+
+.auth-container h2 {
+  color: #ffbe33;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ffbe33;
+  border: none;
+  border-radius: 8px;
+  color: #1a1a1a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #fff;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-btn img {
+  width: 20px;
+}
+
+.switch {
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.switch span {
+  color: #ffbe33;
+  font-weight: 600;
+}
