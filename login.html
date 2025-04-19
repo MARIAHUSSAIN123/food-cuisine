@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Maria's Cuisine</title>
+  <link rel="stylesheet" href="login.css" />   
+</head>
+<body>
+  <div class="auth-container">
+    <h2 id="form-title">Login</h2>
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="handleAuth()">Login</button>
+    <button class="google-btn" onclick="signInWithGoogle()">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+      Continue with Google
+    </button>
+    <p class="switch">
+      Don't have an account? <span onclick="toggleForm()">Sign Up</span>
+    </p>
+  </div>
